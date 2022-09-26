@@ -6,14 +6,12 @@
 </head>
 <body>
 <div class="title-bar">
-    <h1>Vyacheslav Baranov, P32301 #3101</h1>
+    <h1>Вячеслав Баранов, P32301 #3101</h1>
 </div>
 <div class="plot">
     <!-- plot from task variant
     Dynamically loaded by js -->
-    <canvas id="target">
-
-    </canvas>
+    <img src="img/graph.png" alt="graph">
 
     <div class="form">
         <fieldset>
@@ -92,7 +90,19 @@
 <div class="score-table">
     <!-- table of shot results
     Dynamically updated by js-->
-    <table></table>
+    <table>
+        <tbody>
+        <tr>
+            <th colspan="4" class="bordered">Результаты попаданий</th>
+        </tr>
+        <tr>
+            <td>Координаты</td>
+            <td>Время</td>
+            <td>Исполнение</td>
+            <td>Результат</td>
+        </tr>
+        </tbody>
+    </table>
 </div>
 </body>
 </html>
