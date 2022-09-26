@@ -5,25 +5,94 @@
     <title>Web lab1</title>
 </head>
 <body>
-    <div class="title-bar">
+<div class="title-bar">
     <h1>Vyacheslav Baranov, P32301 #3101</h1>
-    </div>
-    <div class="plot">
-        <!-- plot from task variant
-        Dynamically loaded by js -->
-        <canvas id="target">
+</div>
+<div class="plot">
+    <!-- plot from task variant
+    Dynamically loaded by js -->
+    <canvas id="target">
 
-        </canvas>
+    </canvas>
 
-        <div class="forms">
-            <!-- choose X, Y, R
-            Dynamically loaded by js-->
-        </div>
+    <div class="form">
+        <fieldset>
+            <legend class="content-text bordered">Выбор значений</legend>
+            <div class="x-check">
+                <label for="check-4" class="content-text">X</label>
+                <div class="hor-checkbox">
+                    <input type="checkbox" id="check-4" name="checkbox" value="-4" class="x-check"/>
+                    <label for="check-4">-4</label>
+                </div>
+                <div class="hor-checkbox">
+                    <input type="checkbox" id="check-3" name="checkbox" value="-3" class="x-check"/>
+                    <label for="check-3">-3</label>
+                </div>
+                <div class="hor-checkbox">
+                    <input type="checkbox" id="check-2" name="checkbox" value="-2" class="x-check"/>
+                    <label for="check-2">-2</label>
+                </div>
+                <div class="hor-checkbox">
+                    <input type="checkbox" id="check-1" name="checkbox" value="-1" class="x-check"/>
+                    <label for="check-1">-1</label>
+                </div>
+                <div class="hor-checkbox">
+                    <input type="checkbox" id="check-0" name="checkbox" value="0" class="x-check"/>
+                    <label for="check-0">0</label>
+                </div>
+                <div class="hor-checkbox">
+                    <input type="checkbox" id="check+1" name="checkbox" value="1" class="x-check"/>
+                    <label for="check+1">1</label>
+                </div>
+                <div class="hor-checkbox">
+                    <input type="checkbox" id="check+2" name="checkbox" value="2" class="x-check"/>
+                    <label for="check+2">2</label>
+                </div>
+                <div class="hor-checkbox">
+                    <input type="checkbox" id="check+3" name="checkbox" value="3" class="x-check"/>
+                    <label for="check+3">3</label>
+                </div>
+                <div class="hor-checkbox">
+                    <input type="checkbox" id="check+4" name="checkbox" value="4" class="x-check"/>
+                    <label for="check+4">4</label>
+                </div>
+            </div>
+            <div class="y-check">
+                <label for="y-textinput" class="content-text">Y</label>
+                <input id="y-textinput" type="text" name="textarea" autocomplete="off" placeholder="Число от -3 до 5"
+                       size="30"/>
+            </div>
+            <div class="r-check">
+                <label for="rcheck1" class="content-text">R</label>
+                <div class="hor-radio">
+                    <input type="radio" id="rcheck1" name="radio" value="1" class="r-radio"/>
+                    <label for="rcheck1">1</label>
+                </div>
+                <div class="hor-radio">
+                    <input type="radio" id="rcheck2" name="radio" value="2" class="r-radio"/>
+                    <label for="rcheck2">2</label>
+                </div>
+                <div class="hor-radio">
+                    <input type="radio" id="rcheck3" name="radio" value="3" class="r-radio"/>
+                    <label for="rcheck3">3</label>
+                </div>
+                <div class="hor-radio">
+                    <input type="radio" id="rcheck4" name="radio" value="4" class="r-radio"/>
+                    <label for="rcheck4">4</label>
+                </div>
+                <div class="hor-radio">
+                    <input type="radio" id="rcheck5" name="radio" value="5" class="r-radio"/>
+                    <label for="rcheck5">5</label>
+                </div>
+            </div>
+        </fieldset>
+        <button id="submit" class="content-text">Проверить</button>
     </div>
-    <div class="score-table">
-        <!-- table of shot results
-        Dynamically updated by js-->
-        <table></table>
-    </div>
+</div>
+<div class="score-table">
+    <!-- table of shot results
+    Dynamically updated by js-->
+    <table></table>
+</div>
 </body>
 </html>
